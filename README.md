@@ -1,2 +1,0 @@
-# dws
-Docker Web Scaffolds
