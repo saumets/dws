@@ -8,7 +8,6 @@ Available Scaffolds
 -------------------
 
 Snap
-~~~~
   `Sails`_, `Node`_, `Angular`_, `Postgres`_.
   
 .. _docker: https://www.docker.com/
