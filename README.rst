@@ -9,4 +9,10 @@ Available Scaffolds
 
 Snap
 ~~~~
-  Sails, Node, Angular, Postgres.
+  `Sails`_, `Node`_, `Angular`_, `Postgres`_.
+  
+.. _docker: https://www.docker.com/
+.. _Sails: http://sailsjs.org/
+.. _Node: https://nodejs.org/
+.. _Angular: https://angularjs.org/
+.. _Postgres: http://www.postgresql.org/
