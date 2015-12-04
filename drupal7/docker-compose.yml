@@ -1,6 +1,6 @@
 web:
   restart: "always"
-  build: ./containers/web
+  build: ./cnt/apache
   ports:
     - "8080:80"
   volumes:
@@ -16,12 +16,15 @@ mysql:
   ports:
     - "3306:3306"
   environment:
-    - MYSQL_ROOT_PASSWORD=admindl155
+    - MYSQL_ROOT_PASSWORD=admin
 
 data:
   restart: "yes"
   image: mysql:5.7
   volumes:
     - /var/lib/mysql
+    # we set this so we can easily log into our container and import an updated db.
+    # E.g if you keep an active *.sql file of your db in /src/mysql you can docker into
+    # our mysql container and mysql import it through CLI. 
     - ./src/mysql:/var/www/html/mysql
   command: "True"
