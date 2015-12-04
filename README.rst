@@ -15,11 +15,23 @@ These scaffolds are dependent on you being comfortable with the following tools:
 Available Scaffolds
 ###################
 
-Below is a listing of all available *dockerized* web scaffolds. Bear in mind thatthese scaffolds are specifically tailored to my own processes. 
+Below is a listing of all available *dockerized* web scaffolds. Bear in mind that these scaffolds are specifically tailored to my own processes. 
 
 Snap
 *****
 `Sails`_, `Node`_, `Angular`_, `Postgres`_. I'm calling it the SNAP stack although I'm sure it's already been coined.
+
+LampD7
+*****************
+A classic LAMP stack using the `PHP`_ docker base image to build containers capable of running a standard Drupal 7 deployment. **NOTE**: This scaffold currently assumes you clone an existing drupal build into the source folder:
+
+.. code:: bash
+
+  git clone <your_amazing_drupal_repo> src/
+
+Basically clone your existing Drupal 7 site / repository into the local ./src folder. I'll tweak it into a default startup from scratch scaffold when time permits. 
+
+**NOTE**: You'll notice from current clone that I have a process where my web root folder actually is */var/www/html/docroot*. You'll notice this further if you examine the */cnt/apache/sites-enabled/* folder. Tweak as you wish!
 
 **COMING SOON**: *Wordpress* and *Drupal* scaffolds are coming shortly. I just need some time to clean them up a little. 
   
@@ -32,3 +44,4 @@ Snap
 .. _Node: https://nodejs.org/
 .. _Angular: https://angularjs.org/
 .. _Postgres: http://www.postgresql.org/
+.. _PHP: https://hub.docker.com/_/php/
