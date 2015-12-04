@@ -17,7 +17,7 @@ Available Scaffolds
 
 Below is a listing of all available *dockerized* web scaffolds. Bear in mind thatthese scaffolds are specifically tailored to my own processes. 
 
-Snap:
+Snap
 *****
 `Sails`_, `Node`_, `Angular`_, `Postgres`_. I'm calling it the SNAP stack although I'm sure it's already been coined.
 
