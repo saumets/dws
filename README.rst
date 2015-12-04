@@ -21,7 +21,7 @@ Snap
 *****
 `Sails`_, `Node`_, `Angular`_, `Postgres`_. I'm calling it the SNAP stack although I'm sure it's already been coined.
 
-**COMING SOON**: I have scaffolds available for Wordpress and Drupal but they need some additional tweaking and cleanup before I make them available here. *Wordpress* and *Drupal* scaffolds are coming shortly. I just need some time to clean them up a little. 
+**COMING SOON**: *Wordpress* and *Drupal* scaffolds are coming shortly. I just need some time to clean them up a little. 
   
 .. _Docker: https://www.docker.com/what-docker
 .. _Docker Compose: https://docs.docker.com/compose/
