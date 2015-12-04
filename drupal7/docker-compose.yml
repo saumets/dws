@@ -1,4 +1,4 @@
-web:
+apache:
   restart: "always"
   build: ./cnt/apache
   ports:
