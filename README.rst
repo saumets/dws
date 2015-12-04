@@ -21,8 +21,8 @@ Snap
 *****
 `Sails`_, `Node`_, `Angular`_, `Postgres`_. I'm calling it the SNAP stack although I'm sure it's already been coined.
 
-Durpal 7.x
-**********
+Lamp - Durpal 7.x
+*****************
 A classic LAMP stack using the `PHP`_ docker base image to build containers capable of running a standard Drupal 7 deployment. **NOTE**: This scaffold currently assumes you clone an existing drupal build into the source folder:
 
 .. code:: bash
