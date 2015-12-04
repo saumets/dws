@@ -1,0 +1,27 @@
+web:
+  restart: "always"
+  build: ./containers/web
+  ports:
+    - "8080:80"
+  volumes:
+    - ./src:/var/www/html
+  links:
+    - mysql:mysql
+
+mysql:
+  restart: "always"
+  image: mysql:5.7
+  volumes_from:
+    - data
+  ports:
+    - "3306:3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=admindl155
+
+data:
+  restart: "yes"
+  image: mysql:5.7
+  volumes:
+    - /var/lib/mysql
+    - ./src/mysql:/var/www/html/mysql
+  command: "True"
