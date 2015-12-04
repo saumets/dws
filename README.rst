@@ -15,13 +15,13 @@ These scaffolds are dependent on you being comfortable with the following tools:
 Available Scaffolds
 ###################
 
-Below is a listing of all available *dockerized* web scaffolds. Bear in mind thatthese scaffolds are specifically tailored to my own processes. 
+Below is a listing of all available *dockerized* web scaffolds. Bear in mind that these scaffolds are specifically tailored to my own processes. 
 
 Snap
 *****
 `Sails`_, `Node`_, `Angular`_, `Postgres`_. I'm calling it the SNAP stack although I'm sure it's already been coined.
 
-Lamp - Durpal 7.x
+LampD7
 *****************
 A classic LAMP stack using the `PHP`_ docker base image to build containers capable of running a standard Drupal 7 deployment. **NOTE**: This scaffold currently assumes you clone an existing drupal build into the source folder:
 
