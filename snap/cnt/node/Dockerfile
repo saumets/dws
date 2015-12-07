@@ -1,9 +1,8 @@
 # Dockerfile for Node using Sails.js on Ubuntu
 # 
-# Base Image: Official Repository - Buildpack
-# https://hub.docker.com/_/buildpack-deps/
+# Base Image: Official Repository - Ubuntu
+# https://hub.docker.com/_/ubuntu/
 
-# TODO: Move away from buildpack and just install what we need/want.
 FROM buildpack-deps:trusty
 MAINTAINER Paul Saumets <psaumets@everydaybloke.com>
 
@@ -14,8 +13,7 @@ MAINTAINER Paul Saumets <psaumets@everydaybloke.com>
 
 ENV NPM_CONFIG_LOGLEVEL info
 
-# Adjust these to install a different version(s).
-# We require Ruby for SASS support.
+# Adjust this to install a different version
 ENV NODE_VERSION 5.1.0
 ENV RUBY_VERSION 2.2.3
 
@@ -59,7 +57,6 @@ RUN echo 'eval "$(rbenv global)"' >> .wtf
 # No docs please.
 RUN echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
 
-# Execute in bash since by default docker uses Bourne shell (sh)
 RUN bash -l -c 'gem install sass'
 RUN bash -l -c 'gem install compass'
 
@@ -67,4 +64,8 @@ RUN bash -l -c 'gem install compass'
 RUN apt-get clean
 
 # Sailing away
+
 RUN npm install -g sails nodemon gulp
+WORKDIR /var/www/html
+
+COPY scaffold-check.sh /scaffold-check.sh
