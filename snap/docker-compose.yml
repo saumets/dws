@@ -5,6 +5,4 @@ node:
     - "8080:8080"
   volumes:
     - ./src:/var/www/html
-  # DEBUG: conveniently used to keep a container running.
-  # When ready we'll want to launch nodemon or forever here.
-  command: /bin/bash -c 'tail -f /dev/null'
+  command: /bin/bash -c '/scaffold-check.sh && tail -f /dev/null'
