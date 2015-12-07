@@ -65,7 +65,8 @@ RUN apt-get clean
 
 # Sailing away
 
-RUN npm install -g sails nodemon gulp
+RUN npm install -g sails sails-postgresql nodemon gulp
+
 WORKDIR /var/www/html
 
 COPY scaffold-check.sh /scaffold-check.sh
