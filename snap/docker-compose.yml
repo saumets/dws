@@ -1,8 +1,29 @@
 node:
   restart: "always"
   build: ./cnt/node
+  # required for nodemon file-watcher - remove in production
+  privileged: true
   ports:
-    - "8080:8080"
+    - "1337:1337"
   volumes:
     - ./src:/var/www/html
+  links:
+    - postgresql:postgresql
   command: /bin/bash -c '/scaffold-check.sh && tail -f /dev/null'
+
+postgresql:
+  restart: "always"
+  image: postgresql:9.4
+  volumes_from:
+    - data
+  ports:
+    - "5432:5432"
+  environment:
+    - POSTGRES_PASSWORD=admin
+
+data:
+  restart: "yes"
+  image: postgresql:9.4
+  volumes:
+    - /var/lib/postgresql/data
+  command: "True"
