@@ -31,7 +31,7 @@ A standard LAMP stack using the `PHP`_ docker base image to build containers cap
 
 Basically clone your existing Drupal 7 site / repository into the local ./src folder. I'll tweak it into a default startup from scratch scaffold when time permits. 
 
-**NOTE**: You'll notice from current clone that I have a process where my web root folder is */var/www/html/docroot*. You'll further notice this if you examine the */cnt/apache/sites-enabled/* folder. Tweak as you wish!
+**NOTE**: You'll notice after cloning that I have a process where my web root folder is */var/www/html/docroot*. You'll further notice this if you examine the */cnt/apache/sites-enabled/* folder. Tweak as you wish!
 
 **COMING SOON**: *Wordpress* scaffold coming shortly.
   
