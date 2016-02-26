@@ -23,5 +23,8 @@ data:
   image: mysql:5.7
   volumes:
     - /var/lib/mysql
+    # We set this so we can easily log into our container and import an updated db.
+    # E.g if you keep an active *.sql file of your db in /src/mysql you can docker into
+    # our mysql container and mysql import it through CLI.  
     - ./src/mysql:/var/www/html/mysql
   command: "True"
