@@ -1,5 +1,5 @@
-# Official Repository - Apache
-# https://hub.docker.com/_/httpd/
+# Official Repository - PHP w/ Apache
+# https://hub.docker.com/_/php/
 FROM php:5.6-apache
 
 # Activate mod_rewrite
@@ -20,7 +20,7 @@ RUN docker-php-ext-install mysqli
 RUN docker-php-ext-install pdo pdo_mysql
 RUN docker-php-ext-install zip
 
-#Drush - Drupal specific
+# Drush - Drupal specific
 RUN \
 curl -sS https://getcomposer.org/installer | php && \
 mv composer.phar /usr/local/bin/composer && \
