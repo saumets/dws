@@ -2,7 +2,7 @@
 Docker Web Scaffolds
 ********************
 
-A collection of `Docker`_ Web Scaffolds to help get you up and running quickly using a *containerized* local dev environment while developing on Mac OS X. Goodbye bloated laptop littered with frameworks, software, and tools which we've used once but forgot to uninstall! :) Also, we guarantee our local dev environment maps **EXACTLY** to the environments of our colleagues and friends developing with us. *"But, it works on my machine?!"* 
+A collection of `Docker`_ Web Scaffolds to help get you up and running quickly using a *containerized* local dev environment while developing on Mac OS X. Goodbye bloated laptop littered with frameworks, software, and tools which we've used once but forgot to uninstall! :) Also, we guarantee our local dev environment maps **EXACTLY** to the environments of our colleagues and friends developing with us. *"But it works on my machine?!"* 
 
 These scaffolds are dependent on being comfortable with the following tools:
 
